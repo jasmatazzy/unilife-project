@@ -19,13 +19,11 @@ nav {
     column-gap: 10px;
 }
 
-.nav-item img {}
 
 #logo {
-    height: 29.6px;
-    width: 40.85px;
-    padding-left: 8px;
-    padding-right: 20px;
+    height: 30px;
+    margin-left: 8px;
+    margin-right: 20px;
 }
 
 #branding {
