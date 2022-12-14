@@ -1,0 +1,26 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 475px;
+   }
+
+   #footerTop{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    background: #00A2E1;
+    height: 375px;
+   }
+
+   #footerBase{
+    background: #000000;
+    height: 95px;
+   }
+
+   container{
+    width: 50%;
+    height: 100%;
+    border: 2px dotted black;
+   }
