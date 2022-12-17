@@ -6,7 +6,7 @@ import billsIncludedIcon from "../../assets/icon-compare.png"
 
 const CompareCardWrapper = () => {
 
-  const compareCardSectionStyle ={
+  const compareCardContainerStyle ={
     display: "flex",
     alignContent: "center",
     justifyContent: "space-around",
@@ -17,8 +17,8 @@ const CompareCardWrapper = () => {
     width: "100px",
   }
   return (
-    <section id="compareCardPartOne" style={compareCardSectionStyle}>
-      <div>
+    <section id="compareCardPartOne">
+      <div style={compareCardContainerStyle}>
         <CompareCard style={compareCardStyle}
           srcURL={searchIcon}
           CTA="Search"
