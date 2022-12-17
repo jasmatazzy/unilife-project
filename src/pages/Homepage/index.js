@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import CityCard from '../../components/CityCard';
+import "./style.css"
 
 
 
@@ -21,7 +22,7 @@ function Homepage() {
     )
 
     return (
-        <div>
+        <div id="card-wrapper">
             {cities.map(
                 (city)=>{
                     return <CityCard 
