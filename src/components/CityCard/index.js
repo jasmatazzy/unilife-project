@@ -1,14 +1,14 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './style.css'
 
 
-const CityCard = (props) => {
+const CityCard = ({city}) => {
 
 
   return (
     <div>
-      <div>{props.city.name}</div>
+      <h1>{city.name}</h1>
+      <h1>{city.property_count}</h1>
     </div>
   )
 }

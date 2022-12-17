@@ -23,11 +23,12 @@ function Homepage() {
     return (
         <div>
             {cities.map(
-                // (city)=>JSON.stringify(city.name, null, 2)
-                (city) => <CityCard
-                    city={city}
-                    key={city._id}
-                />
+                (city)=>{
+                    return <CityCard 
+                    city = {city}
+                    id ={city.id}
+                    />
+                }
             )}
         </div>
     )
