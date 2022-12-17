@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import CityCard from '../../components/CityCard';
+import CompareSection from '../../components/CompareSection';
 import "./style.css"
 
 
@@ -38,8 +39,9 @@ function Homepage() {
                         />
                     }
                 )}
+                <button>See All Cities</button>
             </div>
-            <button>See All Cities</button>
+            <CompareSection />
         </div>
     )
 }
