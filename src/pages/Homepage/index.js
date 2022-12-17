@@ -8,9 +8,15 @@ import "./style.css"
 function Homepage() {
     const [cities, setCities] = useState([]);
 
+    const cardWrapperStyle = {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        flexWrap: "wrap",
+    }
     useEffect(
         () => {
-            axios.get('https://unilife-server.herokuapp.com/cities?limit=7')
+            axios.get('https://unilife-server.herokuapp.com/cities')
                 .then((response) => {
                     console.log(response.data.response);
                     setCities(response.data.response);
@@ -22,12 +28,12 @@ function Homepage() {
     )
 
     return (
-        <div id="card-wrapper">
+        <div style={cardWrapperStyle}>
             {cities.map(
-                (city)=>{
-                    return <CityCard 
-                    city = {city}
-                    id ={city.id}
+                (city) => {
+                    return <CityCard
+                        city={city}
+                        id={city.id}
                     />
                 }
             )}
