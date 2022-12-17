@@ -17,4 +17,15 @@ html, body{
     color: white
 }
 
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #3A5295;
+    border-radius: 12px;
+    color: white;
+    left: 620px;
+    top: 1600px;
+    position: absolute;
+}
+
    

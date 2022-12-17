@@ -28,15 +28,18 @@ function Homepage() {
     )
 
     return (
-        <div style={cardWrapperStyle}>
-            {cities.map(
-                (city) => {
-                    return <CityCard
-                        city={city}
-                        id={city.id}
-                    />
-                }
-            )}
+        <div>
+            <div style={cardWrapperStyle}>
+                {cities.map(
+                    (city) => {
+                        return <CityCard
+                            city={city}
+                            id={city.id}
+                        />
+                    }
+                )}
+            </div>
+            <button>See All Cities</button>
         </div>
     )
 }
